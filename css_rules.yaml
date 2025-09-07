@@ -32,6 +32,16 @@ post_page_rules:
             },
           ],
       },
+    hao:
+    author:
+      - { selector: ".cf-friends-name",  attr: "text" }
+      - { selector: ".friend-item .friend-name", attr: "text" }
+    link:
+      - { selector: ".cf-friends-link", attr: "href" }
+      - { selector: ".friend-item a",   attr: "href" }
+    avatar:
+      - { selector: ".cf-friends-avatar", attr: "src" }
+      - { selector: ".friend-item img",   attr: "src" }
     butterfly:
       {
         title:
@@ -290,16 +300,3 @@ link_page_rules:
         avatar: [{ selector: ".cf-friends-avatar", attr: "src" }],
       },
   }
-
-  link_page_rules:
-  hao:
-    author:
-      - { selector: ".cf-friends-name", attr: "text" }
-      - { selector: ".friend-item .friend-name", attr: "text" }
-    link:
-      - { selector: ".cf-friends-link", attr: "href" }
-      - { selector: ".friend-item a", attr: "href" }
-    avatar:
-      - { selector: ".cf-friends-avatar", attr: "src" }
-      - { selector: ".friend-item img", attr: "src" }
-
