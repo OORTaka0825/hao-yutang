@@ -102,15 +102,15 @@ post_page_rules:
         created:
           [
             {
-              selector: "section.nexmoe-posts .nexmoe-post-meta a:first-child",
-              attr: "text",
+              selector: "section.nexmoe-posts .nexmoe-post-meta a:first-child"，
+              attr: "text"，
             },
           ],
         updated:
           [
             {
-              selector: "section.nexmoe-posts .nexmoe-post-meta a:first-child",
-              attr: "text",
+              selector: "section.nexmoe-posts .nexmoe-post-meta a:first-child"，
+              attr: "text"，
             },
           ],
       },
@@ -121,15 +121,15 @@ post_page_rules:
         created:
           [
             {
-              selector: "article .post-meta .post-meta-item--createtime .post-meta-item__value",
-              attr: "text",
+              selector: "article .post-meta .post-meta-item--createtime .post-meta-item__value"，
+              attr: "text"，
             },
           ],
         updated:
           [
             {
-              selector: "article .post-meta .post-meta-item--updatetime .post-meta-item__value",
-              attr: "text",
+              selector: "article .post-meta .post-meta-item--updatetime .post-meta-item__value"，
+              attr: "text"，
             },
           ],
       },
@@ -138,23 +138,23 @@ post_page_rules:
         title:
           [
             {
-              selector: ".post-list .post-card:not(.photo) .post-title",
-              attr: "text",
+              selector: ".post-list .post-card:not(.photo) .post-title"，
+              attr: "text"，
             },
           ],
         link: [{ selector: ".post-list .post-card:not(.photo)", attr: "href" }],
         created:
           [
             {
-              selector: ".post-list .post-card:not(.photo) #post-meta time",
-              attr: "text",
+              selector: ".post-list .post-card:not(.photo) #post-meta time"，
+              attr: "text"，
             },
           ],
         updated:
           [
             {
-              selector: ".post-list .post-card:not(.photo) #post-meta time",
-              attr: "text",
+              selector: ".post-list .post-card:not(.photo) #post-meta time"，
+              attr: "text"，
             },
           ],
       },
@@ -290,3 +290,16 @@ link_page_rules:
         avatar: [{ selector: ".cf-friends-avatar", attr: "src" }],
       },
   }
+
+  link_page_rules:
+  hao:
+    author:
+      - { selector: ".cf-friends-name", attr: "text" }
+      - { selector: ".friend-item .friend-name", attr: "text" }
+    link:
+      - { selector: ".cf-friends-link", attr: "href" }
+      - { selector: ".friend-item a", attr: "href" }
+    avatar:
+      - { selector: ".cf-friends-avatar", attr: "src" }
+      - { selector: ".friend-item img", attr: "src" }
+
